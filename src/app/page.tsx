@@ -1,6 +1,6 @@
+import ExplosiveButton from "@/components/form/ExplosiveButton";
 import PasswordInput from "@/components/form/PasswordInput";
 import UsernameInput from "@/components/form/UsernameInput";
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -33,7 +33,7 @@ export default function Home() {
           </div>
           <Separator className="my-4" />
           <div className="grid w-full max-w-sm items-center gap-1.5">
-            <Button className="mt-8">登録</Button>
+            <ExplosiveButton />
           </div>
         </CardContent>
       </Card>

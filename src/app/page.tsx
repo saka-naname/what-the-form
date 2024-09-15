@@ -1,3 +1,4 @@
+import PasswordInput from "@/components/form/PasswordInput";
 import UsernameInput from "@/components/form/UsernameInput";
 import { Button } from "@/components/ui/button";
 import {
@@ -7,8 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
@@ -30,13 +29,7 @@ export default function Home() {
             <UsernameInput />
           </div>
           <div className="grid w-full max-w-sm items-center gap-1.5 mb-8">
-            <Label htmlFor="name">パスワード</Label>
-            <Input
-              type="text"
-              id="name"
-              className="w-96"
-              placeholder="パスワード"
-            />
+            <PasswordInput />
           </div>
           <Separator className="my-4" />
           <div className="grid w-full max-w-sm items-center gap-1.5">
